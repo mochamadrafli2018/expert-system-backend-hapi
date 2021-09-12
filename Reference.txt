@@ -1,0 +1,2 @@
+Button Link :
+https://stackoverflow.com/questions/49654527/open-link-in-new-window-with-vuetify-v-btn-and-vue-router
