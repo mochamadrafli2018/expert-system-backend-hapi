@@ -1,4 +1,4 @@
-const [
+let [
   G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,
   G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,
   G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,
@@ -17,186 +17,222 @@ const [
 ];
 
 // node backend-chatbot.js
-// INPUT
-const d_1 = G1 
-const d_2 = G2
-const d_3 = G3
-const d_4 = G4
-const d_5 = G5
-const d_6 = G6
-const d_7 = G7
-const d_8 = G8
+// 8 INPUT gejala
+let g_1 = G1 
+let g_2 = G2
+let g_3 = G3
+let g_4 = G4
+let g_5 = G5
+let g_6 = G6
+let g_7 = G7
+let g_8 = G8
 
-console.log(G1)
-console.log(G8)
-console.log(d_1)
-console.log(d_8)
-
-const input_diagnose = {d_1,d_2,d_3,d_4,d_5,d_6,d_7,d_8}
 // ALGORITHM
 const diagnose = () => {
-    if (d_1 == G1){
-        if (d_2 == G2){
-          if (d_3 == G3){
-            if (d_4 == G4){
-              if (d_5 == G14){
-                if (d_6 == G27){
-                  if (d_7 == G28){
-                    if (d_8 == G34){
-                      return 'anda didiagnosa menderita Ulkus Kornea'
-                    }
-                    return 'anda mengelami beberapa gejala Ulkus Kornea'
-                  }
-                  return 'anda mengelami beberapa gejala Ulkus Kornea'
+  if (g_1 == G1){
+    if (g_2 == G2){
+      if (g_3 == G3){
+        if (g_4 == G4){
+          if (g_5 == G14){
+            if (g_6 == G27){
+              if (g_7 == G28){
+                if (g_8 == G34){
+                  return 'Anda didiagnosa mengalami Ulkus Kornea'
                 }
-                return 'anda mengelami beberapa gejala Ulkus Kornea'
+                return 'Anda mengelami beberapa gejala Ulkus Kornea'
               }
-              return 'anda mengelami beberapa gejala Ulkus Kornea'
+              return 'Anda mengelami beberapa gejala Ulkus Kornea'
             }
-            return 'anda mengelami beberapa gejala Ulkus Kornea'
+            return 'Anda mengelami beberapa gejala Ulkus Kornea'
           }
-          if (d_3 == G12){
-            if (d_4 == G14){
-              if (d_5 == G28){
-                return 'anda didiagnosa menderita Konjungtivitis'
+          return 'Anda mengelami beberapa gejala Ulkus Kornea'
+        }
+        return 'Anda mengelami beberapa gejala Ulkus Kornea'
+      }
+      if (g_3 == G12){
+        if (g_4 == G14){
+          if (g_5 == G28){
+            return 'Anda didiagnosa mengalami Konjungtivitis'
+          }
+          return 'Anda mengelami beberapa gejala Konjungtivitis'
+        }
+        return 'Anda mengelami beberapa gejala Konjungtivitis'
+      }
+      if (g_3 == G14){
+        if (g_4 == G18){
+          if (g_5 == G27){
+            if (g_5 == G28){
+              if (g_5 == G29){
+                return 'Anda didiagnosa mengalami Keratitis Pungtata Superfisialis'
               }
-              return 'anda mengelami beberapa gejala Konjungtivitis'
+              return 'Anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
             }
-            return 'anda mengelami beberapa gejala Konjungtivitis'
+            return 'Anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
           }
-          if (d_3 == G14){
-            if (d_4 == G18){
-              if (d_5 == G27){
-                if (d_5 == G28){
-                  if (d_5 == G29){
-                    return 'anda didiagnosa menderita Keratitis Pungtata Superfisialis'
-                  }
-                  return 'anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
-                }
-                return 'anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
+          return 'Anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
+        }
+        return 'Anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
+      }
+      if (g_3 == G21){
+        if (g_4 == G22){
+          return 'Anda didiagnosa mengalami Katarak'
+        }
+        return 'Anda mengalami beberapa gejala Katarak'
+      }
+      if (g_3 == G23){
+        if (g_4 == G34){
+          return 'Anda didiagnosa mengalami Endoftalmitis'
+        }
+        return 'Anda mengalami beberapa gejala Endoftalmitis'
+      }
+    }
+    if (g_2 == G5){
+      if (g_3 == G9){
+        if (g_4 == G10){
+          return 'Anda didiagnosa mengalami Blefaritis'
+        }
+        return 'Anda mengalami beberapa gejala Blefaritis'
+      }
+      return 'Anda mengalami 2 gejala Blefaritis'
+    }
+    if (g_2 == G14){
+      if (g_4 == G18){
+        if (g_5 == G21){
+          return 'Anda didiagnosa mengalami Keratokonus'
+        }
+        return 'Anda mengalami beberapa gejala Keratokonus'
+      }
+      return 'Anda mengalami 2 gejala Keratokonus'
+    }
+    if (g_2 == G18){
+      if (g_3 == G23){
+        return 'Anda didagnosa mengalami Uveitis'
+      }
+      return 'Anda mengalami 2 gejala Uveitis'
+    }
+    return 'Anda mengalami gejala fotofobia. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G2){
+    if (g_2 == G5){
+      if (g_3 == G14){
+        if (g_4 == G27){
+          if (g_5 == G35){
+            if (g_6 == G43){
+              if (g_7 == G44){
+                return 'Anda didiagnosa mengalami Glaukoma'
               }
-              return 'anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
+              return 'Anda mengalami beberapa gejala Glaukoma'
             }
-            return 'anda mengalami beberapa gejala Keratitis Pungtata Superfisialis'
+            return 'Anda mengalami beberapa gejala Glaukoma'
           }
-          if (d_3 == G21){
-            if (d_4 == G22){
-              return 'anda didiagnosa menderita Katarak'
-            }
-            return 'anda mengalami beberapa gejala Katarak'
-          }
-          if (d_3 == G23){
-            if (d_4 == G34){
-              return 'P017'
-            }
-          }
+          return 'Anda mengalami beberapa gejala Glaukoma'
         }
-        if (d_2 == G5){
-          if (d_3 == G9){
-            if (d_4 == G10){
-              return 'P004'
-            }
-          }
-        }
-        if (d_2 == G11){}
-        if (d_2 == G14){
-          if (d_4 == G18){
-            if (d_5 == G21){
-              return 'P002'
-            }
-          }
-        }
-        if (d_2 == G18){
-          if (d_3 == G23){
-            return 'P012'
-          }
-        }
+        return 'Anda mengalami beberapa gejala Glaukoma'
       }
-      if (d_1 == G2){
-        if (d_2 == G5){
-          if (d_3 == G14){
-            if (d_4 == G27){
-              if (d_5 == G35){
-                if (d_6 == G43){
-                  if (d_7 == G44){
-                    return 'P010'
-                  }
-                }
-              }
-            }
-          }
-          if (d_3 == G25){
-            if (d_4 == G26){
-              return 'P013'
-            }
-          }
+      if (g_3 == G25){
+        if (g_4 == G26){
+          return 'Anda didiagnosa mengalami Selulitis Orbitalis'
         }
+        return 'Anda mengalami beberapa gejala Selulitis Orbitalis'
       }
-      if (d_1 == G5){
-        if (d_2 == G6){
-          if (d_3 == G7){
-            if (d_4 == G8){return 'P003'}
-          }
+      return 'Anda mengalami 2 gejala yang bisa jadi Glaukoma atau Selulitis Orbitalis.'
+    }
+    return 'Anda mengalami gejala mata terasa nyeri. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G5){
+    if (g_2 == G6){
+      if (g_3 == G7){
+        if (g_4 == G8){
+          return 'Anda didiagnosa mengalami Kalazion'
         }
-        if (d_2 == G16){
-          if (d_3 == G17){
-            return 'P007'
-          }
+        return 'Anda mengalami beberapa gejala Kalazion'
+      }
+      return 'Anda mengalami 2 gejala Kalazion'
+    }
+    if (g_2 == G16){
+      if (g_3 == G17){
+        return 'Anda didiagnosa mengalami Trakoma'
+      }
+      return 'Anda mengalami 2 gejala Trakoma'
+    }
+    return 'Anda mengalami gejala kelopak mata membengkak. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G12){
+    if (g_2 == G28){
+      if (g_3 == G30){
+        if (g_4 == G31){
+          return 'Anda didiagnosa mengalami Alergi Mata Merah'
         }
+        return 'Anda mengalami beberapa gejala Alergi Mata Merah'
       }
-      if (d_1 == G12){
-        if (d_2 == G28){
-          if (d_3 == G30){
-            if (d_4 == G31){return 'P016'}
-          }
+      return 'Anda mengalami 2 gejala Alergi Mata Merah'
+    }
+    return 'Anda mengalami gejala mata terasa panas. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G13){
+    if (g_2 == G14){
+      if (g_3 == G15){
+        if (g_4 == G27){
+          return 'Anda didiagnosa mengalami Hordeolum (Stye)'
         }
+        return 'Anda mengalami beberapa gejala Hordeolum (Stye)'
       }
-      if (d_1 == G13){
-        if (d_2 == G14){
-          if (d_3 == G15){
-            if (d_4 == G27){return 'P005'}
-          }
+      return 'Anda mengalami 2 gejala Hordeolum (Stye)'
+    }
+    return 'Anda mengalami gejala mata seperti kelilipan. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G18){
+    if (g_2 == G19){
+      if (g_3 == G20){
+        return 'Anda didiagnosa mengalami Alblasio Retina'
+      }
+      return 'Anda didiagnosa mengalami Retinopati Diabetikum'
+    }
+    return 'Anda mengalami gejala penglihatan kabur. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G24){
+    return 'Anda didiagnosa mengalami Eksoftalmus'
+  }
+  if (g_1 == G25){
+    if (g_2 == G35){
+      if (g_3 == G36){
+        if (g_4 == G37){
+          return 'Anda didiagnosa mengalami Trombosis Sinus Kavernosus'
         }
+        return 'Anda mengalami beberapa gejala Trombosis Sinus Kavernosus'
       }
-      if (d_1 == G18){
-        if (d_2 == G19){
-          if (d_3 == G20){
-            return 'P008'
+      return 'Anda mengalami 2 gejala Trombosis Sinus Kavernosus'
+    }
+    return 'Anda mengalami gejala Deman. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G38){
+    if (g_2 == G39){
+      return 'Anda didiagnosa mengalami Optic Neuritis'
+    }
+    return 'Anda mengalami gejala Sakit dengan gerakan mata. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }
+  if (g_1 == G14){
+    if (g_2 == G25){
+      if (g_3 == G27){
+        if (g_4 == G40){
+          if (g_5 == G41){
+            return 'Anda didiagnosa mengalami Dakriotitis'
           }
-          else if (d_3 !== G20){
-            return 'P009'
-          }
+          return 'Anda mengalami beberapa gejala Dakriotitis' 
         }
+        return 'Anda mengalami beberapa gejala Dakriotitis'
       }
-      if (d_1 == G24){
-        return 'P014'
-      }
-      if (d_1 == G25){
-        if (d_2 == G35){
-          if (d_3 == G36){
-            if (d_4 == G37){
-              return 'P018'
-            }
-          }
-        }
-      }
-      if (d_1 == G38){
-        if (d_2 == G39){
-          return 'P019'
-        }
-      }
-      if (d_1 == G14){
-        if (d_2 == G25){
-          if (d_3 == G27){
-            if (d_4 == G40){
-              if (d_5 == G41){
-                return 'P020'
-              }
-            }
-          }
-        }
-      }
+      return 'Anda mengalami 2 gejala Dakriotitis'
+    }
+    return 'Anda mengalami gejala mata berair. Belum bisa dipastikan apa diagnosa yang tepat.'
+  }  
 }
 
+// OUTPUT
+console.log(diagnose(g_1,g_2,g_3,g_4,g_5,g_6,g_7,g_8))
+console.log(diagnose(g_1=G24,g_2,g_3,g_4,g_5=G34,g_6,g_7,g_8=G30))
+console.log(diagnose(g_1=G25,g_2=G44,g_3,g_4,g_5,g_6,g_7,g_8=G30))
 
-console.log(diagnose(d_1,d_2,d_3,d_4,d_5,d_6,d_7,d_8))
+// Masalah utama :
+// 1. Misal dia isi 8 gejala, G1, G24, G35, G44, G8, G9, G7
+// Tidak ada penyakit dengan gejala tersebut. Value apa yang harus dikembalikan ke pengguna.
