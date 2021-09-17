@@ -1,8 +1,8 @@
-# Chatbot Backend build with HapiJS (Node Js Framework)
+## Chatbot Backend build with HapiJS (Node Js Framework)
 
 https://hapi.dev/
 
-# Development Dependencies
+## Development Dependencies
 
 ## Install nodemon 
 To keep the local server running when the code was changed
