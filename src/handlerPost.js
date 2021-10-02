@@ -1,5 +1,5 @@
 const DataProcessing = (request, h) => {
-  // request payload to get data from client side.
+  // get data from client side
   const {
     gejala1,
     gejala2,
@@ -46,7 +46,6 @@ const DataProcessing = (request, h) => {
     gejala43,
     gejala44,
   } = request.payload;
-  // success
   // Expert System for Diagnostic Eye Diseases
   const diagnose = () => {
     if (gejala1 == 1) {
@@ -298,7 +297,7 @@ const DataProcessing = (request, h) => {
     gejala44,
   ];
   // Check if there is no null value
-  gejalaDefined = gejala.map((i) => i !== 0);
+  gejalaDefined = gejala.map((i) => i !== undefined);
   if (gejalaDefined !== null) {
     const response = h.response({
       status: "success",

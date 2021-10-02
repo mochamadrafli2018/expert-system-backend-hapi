@@ -1,6 +1,6 @@
 const Hapi = require('@hapi/hapi');
 const routes = require('./routes');
-// git push https://git.heroku.com/nested-api.git HEAD:master
+
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 5000,
@@ -12,9 +12,21 @@ const init = async () => {
       },
     },
   });
-  server.route(routes)
+  server.route(routes);
   await server.start();
 
   console.log(`Server berjalan pada ${server.info.uri}`);
 };
 init();
+
+// Fetching API on Node Js
+/*const axios = require('axios');
+axios.get('http://localhost:5000/')
+    .then((response)=> {
+      console.log(response.status);
+      console.log(response.message);
+    })
+    .catch(function(error) {
+      // console.log(error);
+    });
+*/

@@ -1,4 +1,5 @@
-const {DataProcessing} = require('./handlerPost');
+const {DataProcessing} = require('./handlerPost2');
+const {Test} = require('./handlerPostTest');
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     method: 'POST',
     path: '/',
     handler: DataProcessing,
+  },
+  {
+    method: 'POST',
+    path: '/test',
+    handler: Test,
   },
 ];
 module.exports = routes;
