@@ -78,7 +78,7 @@ const DataProcessing = (request, h) => {
     status: 'fail',
     message: 'Data gejala gagal diproses',
   });
-  response.code(404);
+  response.code(400);
   return response;
 };
 
