@@ -1,5 +1,5 @@
-const {DataProcessing} = require('./handlerPost2');
-const {Test} = require('./handlerPostTest');
+const {DataProcessing} = require('./handler-post');
+const {Test} = require('./handler-post-test');
 
 const routes = [
   {

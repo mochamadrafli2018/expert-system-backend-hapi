@@ -1,9 +1,7 @@
-const diagnose = require('./diagnose');
+const diagnosis = require('./diagnose-algortihm');
 const DataProcessing = (request, h) => {
   // get data from client side
   const {selected} = request.payload;
-  // Expert System for Diagnostic Eye Diseases
-  diagnose;
   // Check
   gejala1 = selected.find((i) => i == 'gejala1');
   gejala2 = selected.find((i) => i == 'gejala2');
@@ -49,6 +47,13 @@ const DataProcessing = (request, h) => {
   gejala42 = selected.find((i) => i == 'gejala42');
   gejala43 = selected.find((i) => i == 'gejala43');
   gejala44 = selected.find((i) => i == 'gejala44');
+  gejala45 = selected.find((i) => i == 'gejala45');
+  gejala46 = selected.find((i) => i == 'gejala46');
+  gejala47 = selected.find((i) => i == 'gejala47');
+  gejala48 = selected.find((i) => i == 'gejala48');
+  gejala49 = selected.find((i) => i == 'gejala49');
+  gejala50 = selected.find((i) => i == 'gejala50');
+  gejala51 = selected.find((i) => i == 'gejala51');
   gejala = [
     gejala1, gejala2, gejala3, gejala4, gejala5,
     gejala6, gejala7, gejala8, gejala9, gejala10,
@@ -58,7 +63,9 @@ const DataProcessing = (request, h) => {
     gejala26, gejala27, gejala28, gejala29, gejala30,
     gejala31, gejala32, gejala33, gejala34, gejala35,
     gejala36, gejala37, gejala38, gejala39, gejala40,
-    gejala40, gejala41, gejala41, gejala43, gejala44,
+    gejala41, gejala42, gejala43, gejala44, gejala45,
+    gejala46, gejala47, gejala48, gejala49, gejala50,
+    gejala51,
   ];
   if (gejala !== null) {
     const response = h.response({
@@ -69,7 +76,7 @@ const DataProcessing = (request, h) => {
       datagejala3: gejala3,
       datagejala4: gejala4,
       datagejala5: gejala5,
-      diagnosis: diagnose(selected),
+      diagnosis: diagnosis(selected),
     });
     response.code(200);
     return response;
