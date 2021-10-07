@@ -1,7 +1,10 @@
 const diagnosis = require('./diagnose-algortihm');
 const DataProcessing = (request, h) => {
-  // get data from client side
-  const {selected} = request.payload;
+  // Get data from client side
+  let {selected} = request.payload;
+  // Sort string in selected array
+  selected = selected.sort();
+  console.log(selected);
   // Check
   gejala1 = selected.find((i) => i == 'gejala1');
   gejala2 = selected.find((i) => i == 'gejala2');
@@ -54,23 +57,46 @@ const DataProcessing = (request, h) => {
   gejala49 = selected.find((i) => i == 'gejala49');
   gejala50 = selected.find((i) => i == 'gejala50');
   gejala51 = selected.find((i) => i == 'gejala51');
-  gejala = [
-    gejala1, gejala2, gejala3, gejala4, gejala5,
-    gejala6, gejala7, gejala8, gejala9, gejala10,
-    gejala11, gejala12, gejala13, gejala14, gejala15,
-    gejala16, gejala17, gejala18, gejala19, gejala20,
-    gejala21, gejala22, gejala23, gejala24, gejala25,
-    gejala26, gejala27, gejala28, gejala29, gejala30,
-    gejala31, gejala32, gejala33, gejala34, gejala35,
-    gejala36, gejala37, gejala38, gejala39, gejala40,
-    gejala41, gejala42, gejala43, gejala44, gejala45,
-    gejala46, gejala47, gejala48, gejala49, gejala50,
-    gejala51,
-  ];
-  if (gejala !== null) {
+  gejala52 = selected.find((i) => i == 'gejala52');
+  gejala53 = selected.find((i) => i == 'gejala53');
+  gejala54 = selected.find((i) => i == 'gejala54');
+  // Check if selected was not empty
+  if (selected == '' || selected === '' ) {
+    const response = h.response({
+      status: 'fail',
+      diagnosis: 'Belum ada data gejala yang di input',
+    });
+    response.code(400);
+    return response;
+  }
+  if (selected == [] || selected === [] ) {
+    const response = h.response({
+      status: 'fail',
+      diagnosis: 'Belum ada data gejala yang di input',
+    });
+    response.code(400);
+    return response;
+  }
+  if (selected == null || selected === null) {
+    const response = h.response({
+      status: 'fail',
+      diagnosis: 'Belum ada data gejala yang di input',
+    });
+    response.code(400);
+    return response;
+  }
+  if (selected == undefined || selected === undefined) {
+    const response = h.response({
+      status: 'fail',
+      diagnosis: 'Belum ada data gejala yang di input',
+    });
+    response.code(400);
+    return response;
+  }
+  if (selected !== [] || selected !== null || selected !== undefined) {
     const response = h.response({
       status: 'success',
-      message: 'Data gejala berhasil diproses.',
+      // message: 'Data gejala berhasil diproses.',
       datagejala1: gejala1,
       datagejala2: gejala2,
       datagejala3: gejala3,

@@ -9,24 +9,24 @@ const diagnosis = () => {
                 if (gejala34) {
                   return 'Anda di diagnosis mengalami Ulkus Kornea.';
                 }
-                return 'Anda mengelami beberapa gejala Ulkus Kornea.';
+                return 'Anda mengalami beberapa gejala Ulkus Kornea.';
               }
-              return 'Anda mengelami beberapa gejala Ulkus Kornea.';
+              return 'Anda mengalami beberapa gejala Ulkus Kornea.';
             }
-            return 'Anda mengelami beberapa gejala Ulkus Kornea.';
+            return 'Anda mengalami beberapa gejala Ulkus Kornea.';
           }
-          return 'Anda mengelami beberapa gejala Ulkus Kornea.';
+          return 'Anda mengalami beberapa gejala Ulkus Kornea.';
         }
-        return 'Anda mengelami beberapa gejala Ulkus Kornea.';
+        return 'Anda mengalami beberapa gejala Ulkus Kornea.';
       }
       if (gejala12) {
         if (gejala14) {
           if (gejala28) {
             return 'Anda di diagnosis mengalami Konjungtivitis.';
           }
-          return 'Anda mengelami beberapa gejala Konjungtivitis.';
+          return 'Anda mengalami beberapa gejala Konjungtivitis.';
         }
-        return 'Anda mengelami beberapa gejala Konjungtivitis.';
+        return 'Anda mengalami beberapa gejala Konjungtivitis.';
       }
       if (gejala14) {
         if (gejala18) {
@@ -159,6 +159,28 @@ const diagnosis = () => {
     return `Anda mengalami gejala kelopak mata membengkak. 
     Belum bisa dipastikan apa diagnosis yang tepat.`;
   }
+  if (gejala6) {
+    if (gejala14) {
+      if (gejala18) {
+        if (gejala27) {
+          if (gejala52) {
+            if (gejala53) {
+              if (gejala54) {
+                return 'Anda didiagnosis mengalami Pterygium';
+              }
+              return 'Anda mengalami 6 gejala Pterygium';
+            }
+            return 'Anda mengalami 5 gejala Pterygium';
+          }
+          return 'Anda mengalami 4 gejala Pterygium';
+        }
+        return 'Anda mengalami 3 gejala Pterygium';
+      }
+      return 'Anda mengalami 2 gejala Pterygium';
+    }
+    return `Anda mengalami gejala mata mengalami iritas.
+    Belum bisa dipastikan apa diagnosis yang tepat.`;
+  }
   if (gejala12) {
     if (gejala28) {
       if (gejala30) {
@@ -218,7 +240,7 @@ const diagnosis = () => {
       }
       return `Anda mengalami gejala 2 gejala Xerophtalmania.`;
     }
-    return `Anda mengalami gejala Penurunan ketajaman penglihatan
+    return `Anda mengalami gejala penurunan ketajaman penglihatan
     (bahkan siang hari)`;
   }
   if (gejala24) {
@@ -254,7 +276,7 @@ const diagnosis = () => {
     return `Anda mengalami gangguan penglihatan pada salah satu mata. 
     Belum bisa dipastikan apa diagnosis yang tepat.`;
   }
-  if (gejala3 || gejala4 || gejala6 || gejala7 || gejala8 || gejala9) {
+  if (gejala3 || gejala4 || gejala7 || gejala8 || gejala9) {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
@@ -262,7 +284,7 @@ const diagnosis = () => {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
-  if (gejala21 || gejala22 || gejala23 || gejala26 || gejala27 || gejala28 ) {
+  if (gejala21 || gejala23 || gejala26 || gejala27 || gejala28 ) {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
@@ -270,7 +292,7 @@ const diagnosis = () => {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
-  if (gejala36 || gejala37 ) {
+  if (gejala36 || gejala37 || gejala39) {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
@@ -278,7 +300,12 @@ const diagnosis = () => {
     return `Maaf, data gejala yang anda input belum dapat dipastikan
     diagnosis apa yang tepat.`;
   }
-  return 'Belum ada data gejala yang di input';
+  if (gejala46 || gejala48 || gejala49 || gejala50 ) {
+    return `Maaf, data gejala yang anda input belum dapat dipastikan
+    diagnosis apa yang tepat.`;
+  }
+  return `Maaf, data gejala yang anda input belum dapat dipastikan
+  diagnosis apa yang tepat.`;
 };
 
 module.exports = diagnosis;
