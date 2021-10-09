@@ -54,6 +54,7 @@ or
 ## Reference - Eye diseases data to build algorithms for diagnostic eye diseases
 
 [1] http://jcosine.if.unram.ac.id/index.php/jcosine/article/download/11/2/
+
 [2] https://ejournal.stmik-time.ac.id/index.php/jurnalTIMES/article/download/5/3/13
  
 Reference: https://www.dicoding.com/academies/261/tutorials
