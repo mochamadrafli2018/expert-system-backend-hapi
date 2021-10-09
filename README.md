@@ -28,7 +28,9 @@ Some of javascript styling in ESLint:
 
 `npm install @hapi/hapi`
 
-Then check package.json
+## Install Another DevDependencies in Package.json
+
+`npm install`
 
 ## Running Hapi
 
