@@ -1,6 +1,10 @@
 ## Expert System for Diagnostic Eye Disease Backend build with Hapi (Node Js Framework)
 
-https://hapi.dev/
+<p align="center">
+  <a href="https://hapi.dev/" target="_blank" rel="noopener noreferrer">
+    <img width="100" src="https://raw.githubusercontent.com/hapijs/assets/master/images/hapi.png" alt="Vue logo"> 
+  </a>
+</p>
 
 ## Development Dependencies
 
