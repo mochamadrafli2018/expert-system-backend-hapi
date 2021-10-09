@@ -1,4 +1,4 @@
-## Chatbot Backend build with HapiJS (Node Js Framework)
+## Expert System for Diagnostic Eye Disease Backend build with Hapi (Node Js Framework)
 
 https://hapi.dev/
 
@@ -32,21 +32,26 @@ Then check package.json
 
 ## Running Hapi
 
-`cd chatbot-backend-hapi`
+`cd name_of_hapi_folder`
 
-`npm run start-dev` for deployment
+`npm run start-dev` for deployment (in CMD/Node.js command prompt/Git bash/Git CMD)
 
 or
 
-`npm run start` for build production
+`npm run start` for build production (in Netlify or Heroku)
 
 ## Check the output at Postman or browser at :
+
 1. localhost:5000 to access data with GET HTTP Method
 2. localhost: 5000 to post data trough client side with POST HTTP Method and get diagnostic eye disease result
  
 ## Reference - Eye diseases data to build algorithms for diagnostic eye diseases
 
-http://jcosine.if.unram.ac.id/index.php/jcosine/article/download/11/2/
-https://ejournal.stmik-time.ac.id/index.php/jurnalTIMES/article/download/5/3/13
+[1] http://jcosine.if.unram.ac.id/index.php/jcosine/article/download/11/2/
+[2] https://ejournal.stmik-time.ac.id/index.php/jurnalTIMES/article/download/5/3/13
  
 Reference: https://www.dicoding.com/academies/261/tutorials
+
+## License
+
+This project was released under MIT License
