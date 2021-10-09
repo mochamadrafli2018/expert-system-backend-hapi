@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://hapi.dev/" target="_blank" rel="noopener noreferrer">
-    <img width="100" src="https://raw.githubusercontent.com/hapijs/assets/master/images/hapi.png" alt="Vue logo"> 
+    <img width="200" src="https://raw.githubusercontent.com/hapijs/assets/master/images/hapi.png" alt="Vue logo"> 
   </a>
 </p>
 
