@@ -99,7 +99,7 @@ const DataProcessing = (request, h) => {
       // message: 'Data gejala berhasil diproses.',
       datagejala1: gejala1,
       datagejala2: gejala2,
-      datagejala3: gejala3,
+      datagejala3: gejala3, 
       datagejala4: gejala4,
       datagejala5: gejala5,
       diagnosis: diagnosis(selected),
